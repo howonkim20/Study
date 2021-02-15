@@ -34,7 +34,7 @@
 
 # 소단원
 
-## 1. 웹의 동작
+## <b> 1. 웹의 동작 </b>
 
 - 들어가기 전 <br>
   사람과 사람이 전화 통화를 하기 위해서도 몇 가지 규약이 필요합니다.
@@ -99,7 +99,7 @@ HTTP (Hypertext Transfer Protocol)
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
 
-## 2. 웹 Front-End 와 Bak-End 1
+## <b> 2. 웹 Front-End 와 Bak-End 1 </b>
 
 - 들어가기 전에 <br>
   웹은 프론트엔드(FE)와 백엔드(BE)로 나눠집니다.
@@ -144,7 +144,7 @@ http://html-css-js.com/ <br>
 
 https://www.edwith.org/boostcourse-ui
 
-## 3. 웹 Front-End 와 Bak-End 2
+## <b> 3. 웹 Front-End 와 Bak-End 2 </b>
 
 - 백 엔드 (Back-End)란?<br>
   backend는 정보를 처리하고 저장하며, 요청에 따라 정보를 내려주는 역할을 한다. 가령 쇼핑몰이라면, 상품 정보를 가지고 있고, 주문을 받아서 저장하고, 사용자가 관심있어 하는 상품을 골라주는 역할이 back-End의 역할이다
@@ -156,3 +156,91 @@ https://www.edwith.org/boostcourse-ui
   운영체제, 네트워크 등에 대한 이해
   프레임워크에 대한 이해(예: Spring)
   DBMS에 대한 이해와 사용방법(예: MySQL, Oracle 등)
+
+## <b> 4. Class 와 id 속성 </b>
+
+- 들어가기 전 <br>
+  HTML 속성중 class 와 id 는 무엇이며 어떻게 사용할까요?
+  이번 소단원에서는 고유한 값인 id와 중복 사용이 가능한 class의 활용 방법에 대해 작성하도록 하겠습니다.
+  다른 웹 사이트에서 Class와 Id를 어떻게 사용했는지 확인해보며 이해를 도모하는 것도 좋은 방법입니다.
+
+- 핵심내용 <br>
+  HTML 태그 안에서 사용되는 Class 속성과 Id 속성
+
+        ID : 고유한 속성으로 한 HTML 문서에 하나만 사용이 가능 합니다.
+        고유한 ID값이 있다면 하나하나에 특별한 제어를 할수 있으며 검색에도 용이 합니다.
+
+        Class?
+        - 하나의 HTML문서 안에 중복해서 사용 가능합니다.
+        - 하나의 태그에 여러 개의 다른 class 이름을 공백을 기준으로 나열할 수가 있습니다.
+        - 홈페이지 전체적인 스타일을 일관성 있게 지정하기 위해서는 class의 사용이 필수적입니다.
+
+        이렇게 구분할 수 있지만, 많은 회사마다 개발단계에서 어떠한 약속(convention)을 만들어서 자신들만의 규칙을 사용하기도 합니다.
+
+        예를 들어 ID사용을 금하는 곳도 있습니다.
+
+        class로만 사용하는 곳도 있습니다.
+
+        그건 팀이 결정하기 나름입니다.
+
+        하지만 반대의 경우 즉 모든 것을 id만으로 사용하는 것은 없겠죠?
+
+## <b> 5. CSS 선언방법 </b>
+
+- 들어가기 전 <br>
+  CSS를 HTML 안에 선언하는 방식은 3가지가 있습니다.
+  이를 잘 이해하고 활용하는 것이 좋습니다.
+
+- 핵심 개념 <br>
+  inline, internal, external
+
+### 1. CSS 의 구성
+
+<img width="618" alt="스크린샷 2021-02-15 오후 1 42 42" src="https://user-images.githubusercontent.com/71308639/107906113-b3105600-6f93-11eb-8e9d-b543c168debd.png">
+
+- span : selector(선택자)
+- color : property
+- red : value
+
+### 2. Style을 HTML 페이지에 적용하는 3가지 방법
+
+<br><br>
+
+#### <b> 2. inline? </b> <br>
+
+HTML 태그 안에다가 작성합니다. 다른CSS 파일에 적용한 것 보다 가장 먼저 적용합니다.
+<img width="619" alt="스크린샷 2021-02-15 오후 1 47 08" src="https://user-images.githubusercontent.com/71308639/107906383-53667a80-6f94-11eb-901e-99ddcde8fbc7.png">
+
+<br> <br>
+
+#### <b> 3. internal? </b> <br>
+
+style 태그로 지정합니다.
+구조와 스타일이 섞이게 되므로 유지보수가 어렵습니다.
+별도의 CSS파일을 관리하지 않아도 되며 서버에 CSS파일을 부르기 위해 별도의 브라우저가 요청을 보낼 필요가 없습니다.
+
+<img width="468" alt="스크린샷 2021-02-15 오후 1 50 32" src="https://user-images.githubusercontent.com/71308639/107906579-ca037800-6f94-11eb-8897-268ecb6969c3.png">
+
+<br> <br>
+
+#### <b> 4. external </b> <br>
+
+외부파일(.css)로 지정하는 방식입니다.
+CSS 코드가 아주 짧지 않다면 가급적 이 방법으로 구현하는 것이 가장 좋습니다.
+현업에서는 여러개의 CSS 파일로 분리하고 이를 합쳐서 서비스에서 사용하기도 합니다.
+internal 코드와 같은 css코드를 구현하고, style.css와 같은 별도 파일로 만듭니다.
+이후에 아래처럼 link태그로 추가하면 됩니다.
+
+<img width="468" alt="스크린샷 2021-02-15 오후 1 50 32" src="https://user-images.githubusercontent.com/71308639/107906676-0d5de680-6f95-11eb-91ae-220c2c7247e2.png">
+
+### <b>5. 우선순위</b>
+
+inline은 별도의 우선순위를 갖지만, internal 과 external은 우선순위가 동등합니다. 따라서 겹치는 선언이 있을 경우 나중에 선언된 속성이 반영됩니다.
+
+참고자료
+
+Difference Between Inline, External and Internal CSS Styles
+https://www.hostinger.com
+세 가지 방식에 대한 예제와 설명입니다.
+
+## <b> 6. 상속과 우선순위 결정 (1) <b>
