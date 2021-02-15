@@ -42,7 +42,6 @@
   또한, 전화 연결이 끊어지면 더 대화를 할 수가 없습니다.
   웹 브라우저와 웹 서버 간에도 서로 통신하기 위해서는 규약이 필요합니다.
   이때 필요한 규약이 HTTP입니다.
-
 - 핵심 개념 <br>
   HTTP, Request 형식, Request Method, Response 형식, 응답 코드
 
@@ -66,5 +65,37 @@
         인터넷 상의 자원의 위치
         특정 웹 서버의 특정 파일에 접근하기 위한 경로 혹은 주소
 
-        4.
-        <img width="704" alt="스크린샷 2021-02-15 오전 10 41 14" src="https://user-images.githubusercontent.com/71308639/107897131-b566b600-6f7b-11eb-9993-183c2e409b21.png">
+
+ <img width="704" alt="스크린샷 2021-02-15 오전 10 41 14" src="https://user-images.githubusercontent.com/71308639/107897131-b566b600-6f7b-11eb-9993-183c2e409b21.png">
+
+HTTP (Hypertext Transfer Protocol)
+
+- 요청 메서드 : GET, PUT, POST, PUSH, OPTIONS 등의 요청 방식이 온다.
+
+- 요청 URI : 요청하는 자원의 위치를 명시한다.
+
+- HTTP 프로토콜 버전 : 웹 브라우저가 사용하는 프로토콜 버전이다.
+
+첫번째 줄의 요청메소드는 서버에게 요청의 종류를 알려주기 위해서 사용됩니다.
+
+각각의 메소드 이름은 다음과 같은 의미를 가집니다.
+
+참고로 최초의 웹 서버는 GET방식만 지원해줬습니다.
+
+- GET : 정보를 요청하기 위해서 사용한다. (SELECT)
+
+- POST : 정보를 밀어넣기 위해서 사용한다. (INSERT)
+
+- PUT : 정보를 업데이트하기 위해서 사용한다. (UPDATE)
+
+- DELETE : 정보를 삭제하기 위해서 사용한다. (DELETE)
+
+- HEAD : (HTTP)헤더 정보만 요청한다. 해당 자원이 존재하는지 혹은 서버에 문제가 없는지를 확인하기 위해서 사용한다.
+
+- OPTIONS : 웹서버가 지원하는 메서드의 종류를 요청한다.
+
+- TRACE : 클라이언트의 요청을 그대로 반환한다. 예컨데 echo 서비스로 서버 상태를 확인하기 위한 목적으로 주로 사용한다.
+
+## 참고링크
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
