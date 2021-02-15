@@ -133,8 +133,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
 
 - 동작 - JavaScript 코드예시<br>
 
-HTML,CSS를 이리저리 움직이고 변경할 필요가 있을 거예요.<br>
-JavaScript가 그걸 해줍니다.
+  TML,CSS를 이리저리 움직이고 변경할 필요가 있을 거예요.<br>
+  JavaScript가 그걸 해줍니다.
 
 <img width="637" alt="스크린샷 2021-02-15 오전 11 23 17" src="https://user-images.githubusercontent.com/71308639/107898880-388a0b00-6f80-11eb-8319-cb075eba6445.png">
 
