@@ -143,3 +143,16 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
 http://html-css-js.com/ <br>
 
 https://www.edwith.org/boostcourse-ui
+
+## 3. 웹 Front-End 와 Bak-End 2
+
+- 백 엔드 (Back-End)란?<br>
+  backend는 정보를 처리하고 저장하며, 요청에 따라 정보를 내려주는 역할을 한다. 가령 쇼핑몰이라면, 상품 정보를 가지고 있고, 주문을 받아서 저장하고, 사용자가 관심있어 하는 상품을 골라주는 역할이 back-End의 역할이다
+
+- 백 엔드 개발자가 알아야 할 것들 <br>
+  프로그래밍 언어(JAVA, Python, PHP, Javascript 등)
+  웹의 동작 원리
+  알고리즘(algorithm), 자료구조 등 프로그래밍 기반 지식
+  운영체제, 네트워크 등에 대한 이해
+  프레임워크에 대한 이해(예: Spring)
+  DBMS에 대한 이해와 사용방법(예: MySQL, Oracle 등)
