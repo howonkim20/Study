@@ -67,4 +67,4 @@
         특정 웹 서버의 특정 파일에 접근하기 위한 경로 혹은 주소
 
         4.
-        [Image](image/HTTP.png)
+        <img width="704" alt="스크린샷 2021-02-15 오전 10 41 14" src="https://user-images.githubusercontent.com/71308639/107897131-b566b600-6f7b-11eb-9993-183c2e409b21.png">
