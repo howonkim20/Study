@@ -67,4 +67,4 @@
         특정 웹 서버의 특정 파일에 접근하기 위한 경로 혹은 주소
 
         4.
-        [Image](src/images/HTTP.png)
+        [Image](image/HTTP.png)
