@@ -218,7 +218,6 @@ HTML 태그 안에다가 작성합니다. 다른CSS 파일에 적용한 것 보�
 style 태그로 지정합니다.
 구조와 스타일이 섞이게 되므로 유지보수가 어렵습니다.
 별도의 CSS파일을 관리하지 않아도 되며 서버에 CSS파일을 부르기 위해 별도의 브라우저가 요청을 보낼 필요가 없습니다.
-
 <img width="468" alt="스크린샷 2021-02-15 오후 1 50 32" src="https://user-images.githubusercontent.com/71308639/107906579-ca037800-6f94-11eb-8897-268ecb6969c3.png">
 
 <br> <br>
@@ -230,7 +229,6 @@ CSS 코드가 아주 짧지 않다면 가급적 이 방법으로 구현하는 �
 현업에서는 여러개의 CSS 파일로 분리하고 이를 합쳐서 서비스에서 사용하기도 합니다.
 internal 코드와 같은 css코드를 구현하고, style.css와 같은 별도 파일로 만듭니다.
 이후에 아래처럼 link태그로 추가하면 됩니다.
-
 <img width="468" alt="스크린샷 2021-02-15 오후 1 50 32" src="https://user-images.githubusercontent.com/71308639/107906676-0d5de680-6f95-11eb-91ae-220c2c7247e2.png">
 
 ### <b>5. 우선순위</b>
@@ -253,3 +251,42 @@ https://www.hostinger.com
 그래서 box-model이라고 불리는 속성들(width, height, margin, padding, border)과 같이 크기와 배치 관련된 속성들은 하위엘리먼트로 상속이 되지 않습니다.
 이렇게 CSS는 꽤 똑똑한 방식으로 동작합니다.  
 아직 혼란스러운 부분이 있다면, 여러분들이 중첩된 엘리먼트를 만들고, CSS 속성을 부여하면서 이 특징을 잘 이해해보면 좋습니다.
+
+## <b> 7. CSS Selector </b>
+
+- CSS Selector란? <br>
+  html 의 요소를 tag, id, html 속성 등을 통해 쉽게 찾아주는 방법입니다.
+
+- tag로 지정하기 <br>
+  <img width="477" alt="스크린샷 2021-02-16 오후 1 59 22" src="https://user-images.githubusercontent.com/71308639/108020251-4f535f00-705f-11eb-98fa-f193a7ee2355.png">
+
+- id 로 지정하기 <br>
+  <img width="488" alt="스크린샷 2021-02-16 오후 2 02 06" src="https://user-images.githubusercontent.com/71308639/108020378-9b9e9f00-705f-11eb-8fb1-c7bca985358f.png">
+
+- class 로 지정하기 <br>
+  <img width="488" alt="스크린샷 2021-02-16 오후 2 03 43" src="https://user-images.githubusercontent.com/71308639/108020474-cee12e00-705f-11eb-9744-50aa7568aa01.png">
+
+### <b> CSS Selector 의 다양한 활용 방법</b>
+
+<br><br>
+
+- id, class 요소 선택자와 같이 사용하기
+  <img width="471" alt="스크린샷 2021-02-16 오후 2 06 37" src="https://user-images.githubusercontent.com/71308639/108020680-36977900-7060-11eb-83ae-1e115ea39b2f.png">
+
+- 그룹 선택(여러개의 Selector에 같은 Style을 적용해야 되는 경우)
+  <img width="496" alt="스크린샷 2021-02-16 오후 2 09 58" src="https://user-images.githubusercontent.com/71308639/108020873-af96d080-7060-11eb-802b-0b621ae557ee.png">
+
+- 요소 선택 (공백) : 자손요소
+- 아래 모든 span태그에 red색상이 적용됨
+  <img width="495" alt="스크린샷 2021-02-16 오후 2 24 58" src="https://user-images.githubusercontent.com/71308639/108021894-ce966200-7062-11eb-8284-a8c149f29572.png">
+  <img width="496" alt="스크린샷 2021-02-16 오후 2 25 58" src="https://user-images.githubusercontent.com/71308639/108021939-e8d04000-7062-11eb-8860-1531fc2f34aa.png">
+
+- 자식 선택 (>) : 자식은 바로 하위엘리먼트를 가리킵니다.
+- 아래는 span tag 2만 red 색상이 적용됩니다.
+  <img width="495" alt="스크린샷 2021-02-16 오후 2 27 48" src="https://user-images.githubusercontent.com/71308639/108022078-38af0700-7063-11eb-8a46-1eb9e08ef6f4.png">
+  <img width="472" alt="스크린샷 2021-02-16 오후 2 28 07" src="https://user-images.githubusercontent.com/71308639/108022101-449ac900-7063-11eb-900e-a84a33ac61cd.png">
+
+- n번째 자식요소를 선택합니다. (nth-child)
+- 첫번째 단락에 red 색상이 적용됩니다.
+  <img width="488" alt="스크린샷 2021-02-16 오후 2 29 41" src="https://user-images.githubusercontent.com/71308639/108022196-76139480-7063-11eb-830b-a169782146e0.png">
+  <img width="464" alt="스크린샷 2021-02-16 오후 2 29 55" src="https://user-images.githubusercontent.com/71308639/108022216-7dd33900-7063-11eb-87f1-6d02722dfc3c.png">
